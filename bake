@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+refresh_code() {
+  git checkout master -- data/ steve_reich_in_the_afternoon.pde message.pde
+  git commit -m "Update source code $(date)"
+}
+
+"$@"
