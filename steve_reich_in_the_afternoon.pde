@@ -6,7 +6,7 @@ PGraphics display;
 
 void setup() {
   size(550,700);
-  mono = loadFont("Monospaced-48.vlw");
+  mono = createFont("MonospaceTypewriter.ttf",48);
   textFont(mono);
   message = new Message("steve reich in the", "afternoon");
   display = createGraphics(width-20, height-20);
